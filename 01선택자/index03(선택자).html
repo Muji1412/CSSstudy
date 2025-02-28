@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- 디자인 시작 전 전체적으로 적용될 코드 작성 -->
+</head>
+<body>
+    <b>선택자</b>
+    <b>선택자</b>
+
+    <p id = "a1">아이디선택자</p>
+    <p class="a1">클래스선택자</p>
+    <p class="a1">클래스선택자</p>
+
+    <div class="b1">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        <ul>
+            <li><p>하위선택자 띄어쓰기</p></li>
+            <li><p>하위선택자 띄어쓰기</p></li>
+        </ul>
+    </div>
+
+    <style>
+        .c1 > input[type = text] {color: blue;}
+        li[class*="col-"]{color: yellow;} /* col-만 들어가있으면 호환시켜줌*/
+    </style>
+    
+    <div class c1>
+        <input type="text">
+        <input type="text">
+        <input type="password">
+    </div>
+
+    <ul>
+        <li class="col-1">a</li>
+        <li class="col-2">a</li>
+        <li class="col-3">a</li> 
+    </ul>
+
+
+    
+    
+</body>
+</html>

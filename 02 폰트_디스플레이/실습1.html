@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .gnb{
+            text-align: right;
+
+        }
+        .gnb > ul > li {
+            display: inline;
+        }
+
+        .gnb > ul > li > a  {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        /* 호버의 경우에는 따로 분리해서 만들어줘야함 */
+        .gnb > ul > li >  a:hover{ /* .gnd > a로 실행해도 지가 알아서 a로 찾아서 감감*/
+            background-color: rgba(255, 255, 255, 0.4);
+            color: red;
+        }
+
+        .logo  {
+            text-align: center;
+            background-color: black;
+        }
+        
+        .logo img{
+            max-width: 100%;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image.png" alt="이미지">
+        
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

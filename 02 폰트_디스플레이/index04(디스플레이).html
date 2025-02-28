@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box .inner {
+            display: inline; 
+            /* 세로로 배치되던 블럭 요소들을 인라인요소로 변경*/
+        }
+        .abox span,
+        .abox strong,
+        .abox i{
+            display: block;
+            /* 가로로 배치되던 인라인 요소들을 블럭요소로 변경 */
+        }
+
+        .bbox a{
+            
+            border: 1px solid #777;
+            width: 100px; /*박스 크기는 블럭속성만 가질 수 있음음 */
+            height: 100px;
+            /* 문제를 고치기 위해 인라인 블럭 사용*/
+            display: inline-block;
+            /* 가로배치 유지, 블럭속성 가짐. */
+            text-align: center;
+            line-height: 100px;
+            color: #000; 
+            text-decoration: none; /* 밑줄긑기 없애기 */
+        }
+
+        .cbox {
+            display: none;
+            /* 지금 당장은 안보이게 만들고, 나중에 필요할때 보이게 만들기 */ 
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class = "box">
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+    </div>
+
+    <div class="abox">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <i>인라인</i>
+    </div>
+
+    <div class="bbox">
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+    </div>
+
+    <div class="cbox">
+        아이디를 입력하세요
+    </div>
+
+    
+</body>
+</html>
