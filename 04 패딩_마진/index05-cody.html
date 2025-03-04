@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            /*이렇게 다 없애놓고 시작하는게 더 좋음*/
+        }
+
+        .gnb > ul li {
+            display: inline;
+        }
+        .gnb ul li a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            /*  패딩을 줘서 상자의 너비를 키울수도 있음  */
+            border-bottom: 2px solid transparent;
+            /* 아래에 먼저 transparent를 줘서 덜컹거림 방지 */
+            box-sizing: border-box;
+            height: 40px;
+
+        }
+        .gnb ul li a:hover {
+            border-bottom: 2px solid blanchedalmond;
+        }
+        .gnb{
+            background-color: black;
+            text-align: center;
+        }
+
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .wrap .box{
+            border: 1px solid black;
+            padding: 30px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            /* 이미지가 사이즈 맞춰서 바뀌게 해줌 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <img src="coupang.png" alt="">
+    </article>
+
+    <section>
+        <div class="wrap">
+            <h3>오늘의 발견</h3>
+            <div class="box">
+                본문영역 <br>
+                본문영역 <br>
+                본문영역 <br>
+                본문영역 <br>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

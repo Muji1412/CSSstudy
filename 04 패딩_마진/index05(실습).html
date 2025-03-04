@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .logo {
+            width: 100%;
+            background: black;
+            display: inline-block;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+        .gnb > ul > li > a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 30px; /* 밑줄 위치 조정 (메뉴 아래쪽에 위치하도록) */
+            width: 100%;
+            height: 2px; /* 밑줄 두께 */
+            background-color: #fff; /* 밑줄 색상 */
+        }
+        .gnb > ul > li > a {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: 2px solid transparent;
+
+        }
+        .gnb > ul > li a:hover {
+            border-bottom: 1px solid #fff;
+        }
+        .gnb > ul > li {
+            display: inline;
+        }
+        .idk{
+            margin: 20px;
+            width: 250px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        p {
+            display: inline-blockm;
+            width: 250px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <nav class="gnb">
+
+                <ul>
+                    <li><a href="">메뉴</a> </li>
+                    <li><a href="">메뉴</a> </li>
+                    <li><a href="">메뉴</a> </li>
+                    <li><a href="">메뉴</a> </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <img src="coupang.png" alt="img" sizes="50%" srcset="">
+    <div class="idk">
+        오늘의 발견
+    </div>
+
+  <p>
+      본문..
+      본문..
+      본문..
+      본문..
+      본문..
+      본문..
+      본문..
+      본문..
+
+  </p>
+
+</body>
+</html>

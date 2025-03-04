@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .box{
+      width: 500px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid red;
+      overflow: hidden;
+    }
+    .left{
+
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+    }
+    .right{
+      border: 1px solid red;
+      float: right;
+      width: 100%;
+      box-sizing: border-box;
+      padding-bottom: 50px;
+    }
+    .rightside{
+      border: 1px solid red;
+      float: right;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    .price{
+      border: 1px solid red;
+      overflow: hidden;
+      clear: both;
+    }
+    .price .ggkek{
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+    }
+    .price .ggkright{
+      float: right;
+      width: 50%;
+
+      box-sizing: border-box;
+    }
+
+    .price .price-box .left{
+      float: left;
+      width: 50%;
+    }
+    .rightside .price-box {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <div class="left">사진</div>
+    <div class="rightside">
+      <div class="right">제목:패딩바텀 50px <br> 내용 : ~~~</div>
+
+      <div class="price">
+        <div class="ggkek">가격</div>
+        <div class="ggkright">10000원</div>
+        <div class="price-box">
+          <button class="left" type="button">장바구니</button>
+          <button class="left" type="button">구매하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

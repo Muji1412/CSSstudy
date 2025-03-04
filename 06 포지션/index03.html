@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    *{padding: 0;margin: 0;}
+    .reply{border: 1px solid red;width: 500px; margin: 0 auto; position: relative; padding: 10px;}
+    .reply > img {position: absolute; left: 10px; top: 10px;}
+    .reply .content {padding-left: 60px;}
+
+
+    .content > textarea{width: 100%; box-sizing: border-box; resize: vertical; min-height: 80px}
+
+    .control {
+      overflow: hidden;
+    }
+    .control > .input-area{float: left;}
+    .control > .input-area > input{display: block;}
+    .control > button {float: right;}
+  </style>
+</head>
+<body>
+<div class="reply">
+  <div>
+    <img src="image.png" alt="as" width="50" height="50">
+
+    <div class = "content">
+      <textarea></textarea>
+      <div class = "control">
+        <div class = "input-area">
+          <input type="text">
+          <input type="text">
+        </div>
+        <button>등록</button>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<style>
+  .result{
+
+    margin: 0 auto;
+    border: 1px solid red;
+    width: 500px;
+    height: 60px;
+    position: relative;
+    padding: 10px;
+
+  }
+
+  .result > img{
+    position: absolute; left: 10px; top: 3px;
+  }
+
+  .content2{
+    padding-left: 80px;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+  }
+
+  .content2 >.right2 {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+
+  .content2 >.right1 {
+    position: absolute;
+    top: 10px;
+    right: 32px;
+  }
+</style>
+
+<div class = "result">
+  <img src="image.png" alt="as" width="50" height="50";>
+  <div class = "content2">
+
+    <p class = h1>제목</p>
+    <p class = h2>내용</p>
+
+    <button class="right1">등록</button>
+    <button class="right2">등록</button>
+
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .box:after{
+        border: 1px solid red;
+        /*content: ""; display: block; clear: both;*/
+        /*  플롯 자식 못감싸는 문제 생김*/
+        /* 부모 :after 속성 사용하기  */
+        /* 부모 overflow 속성 사용하기 */
+        overflow: hidden;
+      }
+      .a, .b, .c{
+        border: 1px solid blue;
+      }
+      .a{
+        float: left;
+      }
+      .b{
+        float: left;
+      }
+      .c{
+        float: right;
+      }
+    </style>
+</head>
+<body>
+  <div class="box">
+    <p class="a">1번박스</p>
+    <p class="b">2번박스</p>
+    <p class="c">3번박스</p>
+
+  </div>
+
+</body>
+</html>

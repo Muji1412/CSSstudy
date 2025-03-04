@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .box{
+      width: 200px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid red;
+    }
+    .wrap{
+      border: 1px solid red;
+      overflow: hidden;
+    }
+
+    .left{
+      border: 1px solid red;
+      float: left;
+      width: 50%;
+
+
+      box-sizing: border-box;
+    }
+    .right{
+      border: 1px solid red;
+      float: right;
+      width: 50%; /* 너비를 50%로 설정 */
+      box-sizing: border-box;
+    }
+    .padding{
+      padding: 20px;
+    }
+  </style>
+<body>
+<p style="font-size: large">과제 1</p>
+<div class="box">
+  <div class="top">탑</div>
+  <div class="wrap">
+    <div class="left">
+      <div class="padding">패딩20</div>
+    </div>
+    <div class="right">
+      <div class="padding">패딩20</div>
+    </div>
+
+
+
+  </div>
+  <div class="bot">봇</div>
+</div>
+
+
+</body>
+</html>
