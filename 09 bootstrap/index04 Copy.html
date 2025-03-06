@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 부트스트랩 css파일 -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- 제이쿼리 -->
+  <script src="./js/jquery-3.7.1.js"></script>
+
+  <!-- 부트스트랩 js파일링크 -->
+  <script src="./js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./css/custom-reset.css">
+  <link rel="stylesheet" href="./css/custom-index03.css">
+</head>
+<body>
+
+  <h3>상품그리드 실습</h3>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 prod-nike">
+          <img src="/img/prod1.jpg" alt="상품1" width="200" height=30%>
+          <div class="prod-content">
+            <ul>
+              <li>나이키 에어맥스
+                <i class="glyphicon glyphicon-heart-empty"></i>
+                <i class="glyphicon glyphicon-eye-open "></i>
+              </li>
+              <li>new 신발 스타일</li>
+              <li>8컬러</li>
+            </ul>
+            <strong>199,000원 </strong>
+          </div>
+          <div class ="prod-hover">
+            <ul>
+              <li><img src = "/img/color1.jpg" alt="컬러1" width="40"> </li>
+              <li><img src = "/img/color2.jpg" alt="컬러2" width="40"> </li>
+              <li><img src = "/img/color3.jpg" alt="컬러3" width="40"> </li>
+              <li><img src = "/img/color4.jpg" alt="컬러4" width="40"> </li>
+              <li><img src = "/img/color5.jpg" alt="컬러5" width="40"> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3>박스 한개만 가운데 정렬하는법</h3>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-8 col-xs-10 join-form">
+          <div class="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+
+          <div class="form-group">
+            <label for="address">address:</label>
+            <form>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="address" id="address">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="form-control">
+            <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+          </div>
+          <button type="button" class="btn btn-primary btn-block">등록하겠삼</button>
+          .....
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

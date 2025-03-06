@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+    @media(min-width:767px) {
+    /*  767픽셀 이상이면 작동하는 디자인이다*/
+      .box{
+        background-color: red;
+      }
+    }
+
+    @media(max-width:766px) {
+    /*  766픽셀 이하면 작동하는 디자인*/
+      .box{
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <h3>미디어쿼리(반응형 디자인)</h3>
+
+  <div class="box">
+    브라우저 크기별로 다른 백그라운드 색상
+  </div>
+
+
+</body>
+</html>

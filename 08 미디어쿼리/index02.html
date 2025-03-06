@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    /* 1240 이상에서 동작*/
+    .box{
+      border: 1px solid #777;
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    @media (min-width: 1240px) {
+
+      .box li{
+        float: left;
+        width: 16.666%;
+      }
+    }
+    /* 767px 이상~1239이하에서 동작하는 디자인 - 태블릿사이즈 */
+    @media (max-width: 1239px) and (min-width: 767px) {
+      .box li{
+        float: left;
+        width: 25%;
+        box-sizing: border-box;
+      }
+    }
+    /*766픽셀 이하에서 작동함*/
+    @media (max-width: 766px) {
+      .box li{
+        float: left;
+        width: 50%
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h3>웹환경에서는 박스 6개, 태블릿에서는 박스 4개, 모바일 환경에서는 2개</h3>
+  <div class="box">
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+    <li>박스</li>
+  </div>
+
+
+</body>
+</html>

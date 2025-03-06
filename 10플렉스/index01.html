@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .box{
+      background-color: aqua; padding: 10px;
+    }
+    .box .flex{background-color: #03c75a; width: 100px;height: 100px;}
+
+    .container {
+      display: inline-flex;
+      /*flex-wrap:wrap;*/
+      /*줄바꿈 속성임*/
+      flex-flow: row wrap;
+    }
+  </style>
+</head>
+<body>
+  <h3> flex vs inline-flex</h3>
+
+  <div class="container box">
+    <div class="flex">1</div>
+    <div class="flex">2</div>
+    <div class="flex">3</div>
+  </div>
+  <div class="container box">
+    <div class="flex">1</div>
+    <div class="flex">2</div>
+    <div class="flex">3</div>
+  </div>
+
+  <!--  이런식으로 두개 있으면 자기가 알아서 블럭요소로 판단해서 가로로 두개 넣음-->
+  <!-- 인라인 플렉스면 인라인처럼 넣어줌 -->
+  <h3>flex-direction</h3>
+
+  <style>
+    .container2 {
+      display: flex;
+      flex-direction: row;
+      /* row, column, 등등이 있고, 그에대한 reverse등이 있다. 리버스는 거꾸로 넣어줌. */
+    }
+  </style>
+
+  <div class="container2 box">
+    <div class="flex">1</div>
+    <div class="flex">2</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+    <div class="flex">3</div>
+  </div>
+</body>
+</html>
